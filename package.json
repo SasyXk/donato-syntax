@@ -1,0 +1,43 @@
+{
+    "name": "donato",
+    "displayName": "donato-syntax",
+    "description": "donato official language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Themes"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "donato",
+            "aliases": ["donato", "donato"],
+            "extensions": [".donato"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "donato",
+            "scopeName": "source.donato",
+            "path": "./syntaxes/donato.tmLanguage.json"
+        }],
+        "themes": [{
+            "label": "Donato Dark Theme",
+            "uiTheme": "vs-dark",
+            "path": "./themes/donato-dark-theme.json"
+        }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/your-username/donato-syntax.git"
+    },
+    "keywords": [
+        "donato",
+        "language",
+        "syntax",
+        "highlighting",
+        "theme"
+    ],
+    "license": "MIT"
+}

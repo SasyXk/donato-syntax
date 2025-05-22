@@ -1,0 +1,222 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "donato",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#types"
+        },
+        {
+            "include": "#constants"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#punctuation"
+        },
+        {
+            "include": "#functions"
+        },
+        {
+            "include": "#variables"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.block.donato",
+                    "begin": "/\\*",
+                    "end": "\\*/",
+                    "captures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.donato"
+                        }
+                    }
+                },
+                {
+                    "name": "comment.line.double-slash.donato",
+                    "begin": "//",
+                    "end": "$",
+                    "captures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.donato"
+                        }
+                    }
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.conditional.donato",
+                    "match": "\\b(if|then|else)\\b"
+                },
+                {
+                    "name": "keyword.control.loop.donato", 
+                    "match": "\\b(while)\\b"
+                },
+                {
+                    "name": "keyword.control.flow.donato",
+                    "match": "\\b(return)\\b"
+                },
+                {
+                    "name": "keyword.declaration.let.donato",
+                    "match": "\\b(let|in)\\b"
+                },
+                {
+                    "name": "keyword.declaration.function.donato",
+                    "match": "\\b(function)\\b"
+                },
+                {
+                    "name": "keyword.declaration.struct.donato",
+                    "match": "\\b(struct)\\b"
+                },
+                {
+                    "name": "keyword.declaration.class.donato",
+                    "match": "\\b(class)\\b"
+                },
+                {
+                    "name": "keyword.modifier.access.donato",
+                    "match": "\\b(public|private)\\b"
+                },
+                {
+                    "name": "keyword.other.donato",
+                    "match": "\\b(this|ref)\\b"
+                }
+            ]
+        },
+        "types": {
+            "patterns": [
+                {
+                    "name": "storage.type.primitive.donato",
+                    "match": "\\b(double|bool|int|int8|int16|int32|int64|void)\\b"
+                },
+                {
+                    "name": "storage.type.auto.donato",
+                    "match": "\\b(auto)\\b"
+                }
+            ]
+        },
+        "constants": {
+            "patterns": [
+                {
+                    "name": "constant.language.boolean.donato",
+                    "match": "\\b(true|false)\\b"
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.scientific.donato",
+                    "match": "\\b-?\\d+(\\.\\d+)?[eE][+-]?\\d+\\b"
+                },
+                {
+                    "name": "constant.numeric.decimal.donato",
+                    "match": "\\b-?\\d+\\.\\d+\\b"
+                },
+                {
+                    "name": "constant.numeric.integer.donato",
+                    "match": "\\b-?\\d+\\b"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.donato",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.donato",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.assignment.donato",
+                    "match": "="
+                },
+                {
+                    "name": "keyword.operator.comparison.donato",
+                    "match": "(==|!=|<=|>=|<|>)"
+                },
+                {
+                    "name": "keyword.operator.arithmetic.donato",
+                    "match": "(\\+|\\-|\\*|\\/)"
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                {
+                    "name": "punctuation.section.braces.begin.donato",
+                    "match": "\\{"
+                },
+                {
+                    "name": "punctuation.section.braces.end.donato", 
+                    "match": "\\}"
+                },
+                {
+                    "name": "punctuation.section.parens.begin.donato",
+                    "match": "\\("
+                },
+                {
+                    "name": "punctuation.section.parens.end.donato",
+                    "match": "\\)"
+                },
+                {
+                    "name": "punctuation.separator.comma.donato",
+                    "match": ","
+                },
+                {
+                    "name": "punctuation.separator.colon.donato",
+                    "match": ":"
+                },
+                {
+                    "name": "punctuation.accessor.dot.donato",
+                    "match": "\\."
+                },
+                {
+                    "name": "punctuation.terminator.statement.donato",
+                    "match": ";"
+                }
+            ]
+        },
+        "functions": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.donato",
+                    "match": "\\b[a-z][a-zA-Z0-9_]*(?=\\s*\\()"
+                }
+            ]
+        },
+        "variables": {
+            "patterns": [
+                {
+                    "name": "entity.name.type.class.donato",
+                    "match": "\\b[A-Z][a-zA-Z0-9_]*\\b"
+                },
+                {
+                    "name": "variable.other.donato",
+                    "match": "\\b[a-z][a-zA-Z0-9_]*\\b"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.donato"
+}

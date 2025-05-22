@@ -1,0 +1,217 @@
+{
+    "name": "Donato Dark Theme",
+    "type": "dark",
+    "colors": {
+        "editor.background": "#1e1e1e",
+        "editor.foreground": "#d4d4d4",
+        "editor.lineHighlightBackground": "#2d2d30",
+        "editor.selectionBackground": "#264f78",
+        "sideBar.background": "#252526",
+        "activityBar.background": "#2c2c2c"
+    },
+    "tokenColors": [
+        {
+            "name": "Comment",
+            "scope": [
+                "comment.block.donato",
+                "comment.line.double-slash.donato"
+            ],
+            "settings": {
+                "foreground": "#6A9955",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keywords - Control Flow",
+            "scope": [
+                "keyword.control.conditional.donato",
+                "keyword.control.loop.donato",
+                "keyword.control.flow.donato"
+            ],
+            "settings": {
+                "foreground": "#C586C0",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Keywords - Let/In",
+            "scope": [
+                "keyword.declaration.let.donato"
+            ],
+            "settings": {
+                "foreground": "#E74C3C",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Keywords - Function",
+            "scope": [
+                "keyword.declaration.function.donato"
+            ],
+            "settings": {
+                "foreground": "#d7de76",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Keywords - Struct", 
+            "scope": [
+                "keyword.declaration.struct.donato"
+            ],
+            "settings": {
+                "foreground": "#9B59B6",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Keywords - Class",
+            "scope": [
+                "keyword.declaration.class.donato"
+            ],
+            "settings": {
+                "foreground": "#CCFF00",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Keywords - Access Modifiers",
+            "scope": [
+                "keyword.modifier.access.donato"
+            ],
+            "settings": {
+                "foreground": "#FF6B6B",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keywords - Other",
+            "scope": [
+                "keyword.other.donato"
+            ],
+            "settings": {
+                "foreground": "#e1fcfb"
+            }
+        },
+        {
+            "name": "Types",
+            "scope": [
+                "storage.type.primitive.donato",
+                "storage.type.auto.donato"
+            ],
+            "settings": {
+                "foreground": "#29CC96",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Boolean Constants",
+            "scope": [
+                "constant.language.boolean.donato"
+            ],
+            "settings": {
+                "foreground": "#FF9500"
+            }
+        },
+        {
+            "name": "Numbers",
+            "scope": [
+                "constant.numeric.scientific.donato",
+                "constant.numeric.decimal.donato", 
+                "constant.numeric.integer.donato"
+            ],
+            "settings": {
+                "foreground": "#B5CEA8"
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": [
+                "string.quoted.double.donato"
+            ],
+            "settings": {
+                "foreground": "#CE9178"
+            }
+        },
+        {
+            "name": "String Escapes",
+            "scope": [
+                "constant.character.escape.donato"
+            ],
+            "settings": {
+                "foreground": "#D7BA7D"
+            }
+        },
+        {
+            "name": "Operators - Assignment",
+            "scope": [
+                "keyword.operator.assignment.donato"
+            ],
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        },
+        {
+            "name": "Operators - Comparison",
+            "scope": [
+                "keyword.operator.comparison.donato"
+            ],
+            "settings": {
+                "foreground": "#C586C0"
+            }
+        },
+        {
+            "name": "Operators - Arithmetic",
+            "scope": [
+                "keyword.operator.arithmetic.donato"
+            ],
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "entity.name.function.donato"
+            ],
+            "settings": {
+                "foreground": "#b9d192",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Classes/Types (UPPERCASE)",
+            "scope": [
+                "entity.name.type.class.donato"
+            ],
+            "settings": {
+                "foreground": "#06c248",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Variables",
+            "scope": [
+                "variable.other.donato"
+            ],
+            "settings": {
+                "foreground": "#9CDCFE"
+            }
+        },
+        {
+            "name": "Punctuation",
+            "scope": [
+                "punctuation.section.braces.begin.donato",
+                "punctuation.section.braces.end.donato",
+                "punctuation.section.parens.begin.donato",
+                "punctuation.section.parens.end.donato",
+                "punctuation.separator.comma.donato",
+                "punctuation.separator.colon.donato",
+                "punctuation.accessor.dot.donato",
+                "punctuation.terminator.statement.donato"
+            ],
+            "settings": {
+                "foreground": "#D4D4D4"
+            }
+        }
+    ]
+}
